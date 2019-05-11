@@ -1,0 +1,33 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/app.css">
+    <title>{{.title}}</title>
+</head>
+<body>
+    <!-- <div class="jumbotron text-white bg-primary">
+        <h1 class="text-center">Hellow {{.name}}</h1>
+    </div> -->
+    {{template "_header"}}
+
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-secondary">
+                <h2 class="text-center">Welcome To My First GoLang's Web Application</h2>
+                <p class="text-left pl-4 m-0 my_text_style">My Text Style</p>
+                <center>
+                    <img src="https://i.pinimg.com/originals/58/4b/2d/584b2d27360ea867c70d14214767574c.png" style="width:200px;" alt="">
+                </center>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum quia tempore odit reprehenderit quisquam ratione tenetur aut magnam, iusto eos sunt delectus quam eveniet illo eaque accusantium esse voluptatem?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio iusto repudiandae consequatur distinctio ea quisquam est earum, deleniti aspernatur aliquam molestias ex sint doloribus adipisci ad quam, similique quibusdam?</p>
+            </div>
+        </div>
+    </div>
+    {{template "_footer"}}
+</body>
+</html>
+{{end}}
